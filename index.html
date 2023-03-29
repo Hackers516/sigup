@@ -1,16 +1,21 @@
 <div class="container">
-	<h2>Sign Up</h2>
+	<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Facebook_logo_%28square%29.png/1200px-Facebook_logo_%28square%29.png" alt="Facebook logo">
+	<h2>Log in to Facebook</h2>
 	<form>
-	  <label for="username">Username</label>
-	  <input type="text" id="username" name="username" placeholder="Enter your username" required>
-	  
-	  <label for="email">Email</label>
-	  <input type="email" id="email" name="email" placeholder="Enter your email" required>
+	  <label for="username">Email address or phone number</label>
+	  <input type="text" id="username" name="username" placeholder="Enter your email address or phone number" required>
 	  
 	  <label for="password">Password</label>
 	  <input type="password" id="password" name="password" placeholder="Enter your password" required>
 	  
-	  <button type="submit">Sign Up</button>
+	  <button type="submit">Log In</button>
+	  
+	  <div class="checkbox">
+		<input type="checkbox" id="remember" name="remember">
+		<label for="remember">Remember me</label>
+	  </div>
+	  
+	  <a href="#">Forgotten password?</a>
 	</form>
   </div>
 <style>
@@ -22,10 +27,15 @@
   background-color: #fff;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+img {
+  width: 100px;
+  margin-bottom: 20px;
 }
 
 h2 {
-  text-align: center;
   font-size: 24px;
   margin-bottom: 20px;
 }
@@ -33,6 +43,7 @@ h2 {
 form {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 label {
@@ -45,20 +56,41 @@ input {
   border: 1px solid #ccc;
   border-radius: 5px;
   margin-bottom: 20px;
+  width: 100%;
+  max-width: 350px;
 }
 
 button {
-  background-color: #4caf50;
+  background-color: #1877f2;
   color: #fff;
   padding: 10px;
   border: none;
   border-radius: 5px;
   font-size: 16px;
   cursor: pointer;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 350px;
 }
 
 button:hover {
-  background-color: #3e8e41;
+  background-color: #165bc0;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+a {
+  color: #1877f2;
+  text-decoration: none;
+  margin-top: 20px;
 }
 
 </style>  
